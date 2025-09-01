@@ -1,6 +1,4 @@
-class Solution(object):
-    def removeDuplicates(self, nums):
-       """
+"""
         :type nums: List[int]
         :rtype: int
 
@@ -16,7 +14,9 @@ class Solution(object):
         Time Complexity: O(n)  (single pass)
         Space Complexity: O(1) (in-place, no extra storage)
         """
-
+class Solution(object):
+    def removeDuplicates(self, nums):
+    
         k = 2
         for i in range(2, len(nums)):
              print(nums[i],i,k-2)
