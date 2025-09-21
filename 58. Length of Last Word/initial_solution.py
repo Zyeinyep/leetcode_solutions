@@ -4,9 +4,13 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
+        # Split the string into an array by spaces
         arr = s.split(" ")
-        print(arr)
+        
+       
+        # Remove trailing empty strings from the end
         while arr[-1] == "":
             arr.pop()
-        return len(arr[-1])
         
+        # Return the length of the last word
+        return len(arr[-1])
