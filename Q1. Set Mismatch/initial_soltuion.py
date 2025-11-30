@@ -1,5 +1,4 @@
 from collections import defaultdict
-
 class Solution(object):
     def findErrorNums(self, nums):
         """
