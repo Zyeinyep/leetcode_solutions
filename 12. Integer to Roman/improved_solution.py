@@ -18,7 +18,6 @@ class Solution:
             Aside from a small result list, no additional space grows with input.
         """
 
-        # Roman numeral values in descending order, including subtractive cases.
         val = [
             1000, 900, 500, 400,
             100,  90,  50,  40,
