@@ -36,9 +36,9 @@ class Solution:
 
         res = []
 
-        # Greedily subtract and append symbols
+     
         for i in range(len(val)):
-            # Append symbol while value still fits into num
+         
             while num >= val[i]:
                 num -= val[i]
                 res.append(syms[i])
