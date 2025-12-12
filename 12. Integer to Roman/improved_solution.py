@@ -25,7 +25,7 @@ class Solution:
             1
         ]
 
-        # Corresponding symbols for each value above.
+   
         syms = [
             "M", "CM", "D", "CD",
             "C", "XC", "L", "XL",
