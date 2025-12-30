@@ -1,4 +1,3 @@
-#still in the process of solving
 class Solution(object):
     def letterCombinations(self, digits):
         """
@@ -19,18 +18,21 @@ class Solution(object):
         }
         for i in digits:
             choices.append(my_dict[int(i)])
-        for j in choices:
-            print(j,type(j))
 
-        def backtrack(comb, choices):
+        def backtrack(index, comb, choices):
+            
             if len(comb) == len(choices):
-                res.append(comb)
+                print(comb)
+
+                res.append("".join(comb))
                 return
-            for i in comb:
-                for j in i:
-                    comb.append(i)
-                    backtrack(comb,choices)
-                    comb.pop()
-        backtrack([], choices)
+            
+            for i in choices[index]:
+                comb.append(i)
+                
+                backtrack(index+1, comb,choices)
+                comb.pop()
+        backtrack(0,[], choices)
+     
         return res
         
