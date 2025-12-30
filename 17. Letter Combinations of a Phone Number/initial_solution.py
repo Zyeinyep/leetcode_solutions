@@ -4,6 +4,9 @@ class Solution(object):
         :type digits: str
         :rtype: List[str]
         """
+        #Logic: Backracking
+        #Time complexity: O(n*4^n)
+        #Space complexity: O(n*4^n) + O(n)
         res = []
         choices = []
         my_dict = {
