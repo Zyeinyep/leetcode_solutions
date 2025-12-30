@@ -5,6 +5,8 @@ class Solution(object):
         :type digits: str
         :rtype: List[str]
         """
+        #Logic: Bakctracking
+        #Space and time comp: O(n*4^n)
         res = []
         my_dict = {
             "2": "abc",
