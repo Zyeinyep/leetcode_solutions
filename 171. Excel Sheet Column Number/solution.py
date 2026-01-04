@@ -4,6 +4,9 @@ class Solution(object):
         :type columnTitle: str
         :rtype: int
         """
+        # Runtime: O(n)
+        # Space complexity: O(1)
+        
         res = 0
         for c in columnTitle:
             res = res * 26+(ord(c)-ord("A")+1)
