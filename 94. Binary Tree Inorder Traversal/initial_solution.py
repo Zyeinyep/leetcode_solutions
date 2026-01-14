@@ -4,6 +4,8 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+# Time complexity: O(n)
+# Space complexity: O(h): h is the height of the tree
 class Solution(object):
     def inorderTraversal(self, root):
         """
